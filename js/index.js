@@ -4,7 +4,7 @@
         type:"get",
         dataType:"json"
     });
-    //console.log(res);
+    console.log(res);
 		// var p=res[0];	//取第一个商品
 		// var {href,pic,title,price}=p;	//解构第一个商品的属性
 		// var html=`<a href="${href}">
@@ -43,11 +43,7 @@
 		}
 		var parent=document.querySelector(
 		"#jzjx>div:nth-child(2)>div:first-child");
-		
-
 		parent.innerHTML=html;
-		
-
 })()
 //测试 localhost:3000/index.html f12  结果返回[{},{},{},{},{}
 

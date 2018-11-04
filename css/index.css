@@ -631,7 +631,7 @@ body{
 }
 .midDIV{
     width: 1200px;
-    margin: 30px auto 0;
+    margin: 24px auto 0;
 }
 .midDIV:after{
     content:"";
