@@ -41,9 +41,12 @@
         <!-- 左侧 --> 
         <div id="preview" class="detail_left">
           <div>
-            <div class="left_img"
+            <div class="left_img">
               <div class="md_img">
                 <img src="img/product/md/3_05899132133372532_360.jpg">
+              </div>
+              <div id="mask" class="none"></div>
+              <div id="super-mask"></div>
             </div>
             <div class="small_img">
               <a href="#">
@@ -58,12 +61,10 @@
               <a href="#">
                 <i class="arrow-next"></i>
               </a>
-            </div> 
-            <div class="lg_img" >
-              <img src="img/product/lg/iphonsXS-3_05912976387583149_1280.jpg">
+             </div>        
+            <div id="div-lg" class="lg_img none" >
+              <!-- <img src="img/product/lg/iphonsXS-3_05912976387583149_1280.jpg">应用背景引入方式 -->
             </div>
-            
-
           </div> 
 
           <div class="ncs_handle">
@@ -345,10 +346,10 @@
     </div>
     <footer id="footer"></footer>
   </div>
-  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/jquery-3.2.1.js"></script>
   <script src="js/header.js"></script>
   <script src="js/footer.js"></script>
-  <script src="js/ajax.js"></script>
+  <!-- <script src="js/ajax.js"></script> 可删除使用jQuery中$AJAX-->
   <script src="js/details.js"></script>
 </body>
 </html>
