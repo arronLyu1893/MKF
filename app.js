@@ -4,7 +4,7 @@ const bodyParser=require('body-parser');
 /*引入路由模块*/
 // const user=require('./router/user.js');
 // const login=require('./router/login.js');
-const index=require("./router/index.js")
+const index=require("./router/index222222")
 const details=require("./router/details.js")
 
 //1.构建服务器
@@ -14,7 +14,7 @@ app.listen(3000,()=>{
 });
 
 //2.托管静态资源public
-app.use(express.static(__dirname+'/public'));
+app.use(express.static('public'));
 
 //3.使用body-parser中间件
 app.use(bodyParser.urlencoded({extended:false}));
