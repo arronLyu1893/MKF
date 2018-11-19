@@ -9,6 +9,7 @@ body{
     width: 100%;
     border-bottom:1px solid #f0f0f0;
     line-height:20px;
+    background-color: #e5e5e5;
 }
 .topbar{
     width: 1200px;
@@ -17,9 +18,16 @@ body{
     font-size:12px;
     color: #777;
 }
-.topbar a{
-    color: #777;
+.topbar a {
     text-decoration: none;
+}
+.topbar .left a{
+    color: #555;
+    text-decoration: none;
+    margin-left: 3px;
+}
+.topbar .left  a:hover{
+    color: #e32613;
 }
 .left{
     float:left;
@@ -29,9 +37,34 @@ body{
     float:right;
     line-height:30px;
 }
+
+.quick-menu a {
+    color: #777;
+}
+.user-entry {
+    float: right;
+    line-height: 30px;
+    margin-right: 6px;
+}
+.user-entry a {
+    color: #333333;
+}
 .quick-menu dl{
     float:left;
     margin-left: 15px;
+    position: relative;
+}
+.quick-menu dl:hover dd{
+    visibility: visible;
+}
+.quick-menu dl dd {
+    position: absolute;
+    background-color: #fff;
+    top: 30px;
+    visibility: hidden;
+}
+.quick-menu dl dd ul {
+    list-style:none;
 }
 .quick-menu dl dt i{
     width: 6px;
