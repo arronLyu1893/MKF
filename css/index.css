@@ -592,9 +592,19 @@ body{
 .channel .floor-8 .fbox-center {
     width: 784px;
     height: 450px;
-    padding:0 6px 0 18px;
-}.channel .floor-9 .fbox-center {
-    width: 784px;
+    padding: 0;
+    margin-left: 18px;
+}
+.channel .floor-8 .fbox-center .box-four-1 a{
+    margin-right: 16px;
+}
+.channel .floor-8 .fbox-center .box-four-1:nth-child(4) a{
+    margin-right: 0;
+    border-top-right-radius: 5px;
+}
+.channel .floor-8 .fbox-center .box-four-1:nth-child(8) a{
+    margin-right: 0;
+    border-bottom-right-radius: 5px;
 }
 
 

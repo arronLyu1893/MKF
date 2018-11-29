@@ -76,8 +76,8 @@
   left:367px;
   top: 0px;
   z-index: 999;
-  width: 600px;
-  height: 463px;    
+  width: 400px;
+  height: 400px;    
 }
 .detail_left>div:nth-child(1){
   border:1px solid #eee;
@@ -307,6 +307,10 @@
 .detail_center .ncs_spec li{
   margin-right: 8px;
 }
+.detail_center .ncs_spec li.hovered{
+  border:1px solid #e32613;
+
+}
 .detail_center .ncs_spec dl a{
   border: 1px solid #dfdfdf;
   display: block;
@@ -315,7 +319,6 @@
   line-height: 32px;
 }
 .detail_center .ncs_spec dl li:nth-last-child(1){
-  border:1px solid #e32613;
 }
 
 .detail_center .ncs_spec dl a img{
