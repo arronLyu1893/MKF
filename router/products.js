@@ -6,7 +6,9 @@ const pool = require("../pool")
 router.get("/",(req,res)=>{
               //url.parse(req.url,true) 
   var kwords = req.query.kwords;//"macbook i5 128g"
-  console.log("0001+"+kwords)
+  kwords=decodeURI(kwords);
+  console.log("1:"+kwords);
+  
   var arr=kwords.split(" ")//arr[macbook,i5,128g]
   for(var i=0;i<arr.length;i++){
     arr[i]=`title like '%${arr[i]}%'`
@@ -20,7 +22,7 @@ router.get("/",(req,res)=>{
     //count:0,//查询结果的总记录数
   }
   output.pno=req.query.pno;
-  console.log("001:"+output.pno)
+  console.log("2:"+output.pno)
   var sql="SELECT * FROM mkf_phone ";
   //var sql="SELECT *,( SELECT md from mkf_phone_pic where lid=lid LIMIT 1 ) as md FROM mkf_phone ";
   console.log("002:"+sql+where);
