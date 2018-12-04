@@ -16,6 +16,7 @@ $(function(){
 				//3.查找要修改的元素
 				//4.修改元素
 				var kw=$input.val().trim();
+				
 				if(kw!=="")
 					location.href=`products.html?kwords=${kw}`;
 			}) 
