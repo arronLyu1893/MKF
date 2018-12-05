@@ -8,6 +8,114 @@ li{
 em,i {
   font-style: normal;
 }
+a{
+  text-decoration: none;
+}
+/* ********右侧购物车*********** */
+.nc-appbar {
+  position: fixed;
+  width: 35px;
+  background: #000;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index:1993;
+}
+.nc-appbar .nc-appbar-tabs .content-box {
+  position: absolute;
+  width: 200px;
+  right: 35px;
+  height: 100%;
+  background: #f5f5f5;
+  border-left:1px solid #666;
+  box-shadow: -4px 0 2px rgba(0,0,0,0.25);
+}
+.nc-appbar  .nc-appbar-tabs .content-box .top{
+  height: 24px;
+  padding: 9px 7px;
+  border-bottom: dotted 1px #CCC;
+  margin-bottom: 10px;
+}
+.nc-appbar  .nc-appbar-tabs .content-box .top h3 {
+  color: #333;
+  
+  font: 16px/24px "microsoft yahei";
+
+}
+.nc-appbar  .nc-appbar-tabs .content-box #rtoolbar_cartlist .cart-list{
+  width: 180px;
+  margin: 0 auto;
+}
+.nc-appbar .cart-list  li {
+  position: relative;
+  padding: 4px;
+  margin-bottom: 10px;
+  background: #fff;
+  border:1px solid #fff;
+}
+.nc-appbar .cart-list  li:hover {
+  border-color: #f32613;
+  box-shadow: 3px 3px 0 rgba(204,204,204,0.75);
+}
+.nc-appbar .cart-list li a.del{
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: -8px;
+  font-size: 12px;
+  color: #FFF;
+  border-radius: 7px;
+  background: #ccc;
+}
+.nc-appbar .cart-list .good-pic {
+  display:inline-block;
+}
+.nc-appbar .cart-list .good-pic a img{
+  display: block;
+  max-width: 40px;
+  max-height: 40px;
+}
+.nc-appbar .cart-list dl {
+  width: 125px;
+  display:inline-block;
+  font-size: 12px;
+}
+.nc-appbar .cart-list .goods-name a{
+  width: 125px;
+  color: #555;
+  display:block;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.nc-appbar .goods-price {
+  font: 600 14px/20px Arial;
+  color: #c00;
+}
+.nc-appbar .content-box .btn-box {
+  text-align: center;
+  position: absolute;
+  background: #fff;
+  width: 160px;
+  padding: 10px;
+  bottom: 0;
+  left: 10px;
+}
+.nc-appbar .content-box .btn-box .total-price {
+  color: #777;
+  margin-bottom:10px;
+  font-size: 16px;
+}
+.nc-appbar .content-box .btn-box a {
+  background-color: #f32613;
+  color: #fff;
+  padding: 5px 10px;
+  cursor:pointer;
+  font-size: 12px;
+}
+/* *********商品列表*********** */
 .wrap-ncv{
   width: 100%;
   background-color:#fafafa;
@@ -175,6 +283,32 @@ em,i {
   display:inline-block;
   margin-left: 10px;
 }
+.M_goodlist .goods-info .btn {
+  display:inline-block;
+  width: 70px;
+}
+.M_goodlist .goods-info .btn button {
+  width: 20px;
+  border-style: none;
+  background: linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+}
+.M_goodlist .goods-info .btn button:hover {
+  color: #fff;
+}
+
+.M_goodlist .goods-info .btn input{
+  width: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
 .M_goodlist .goods-info .store a{
   color: #fff;
 }
@@ -184,7 +318,7 @@ em,i {
   display:inline-block;
   height: 24px;
   padding: 2px 5px;
-  margin: 10px 0 0 70px;
+  margin: 10px 0 0 0px;
 }
 .M_goodlist .goods-info .goods-sub span {
   line-height: 20px;
