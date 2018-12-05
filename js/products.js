@@ -48,6 +48,11 @@ $(function(){
                         <div class="store">
                           <a href="#">官方自营</a>
                         </div>
+                        <div class="btn">
+                          <button>-</button>
+                          <input type="text" value="1">
+                          <button>+</button>
+                        </div>
                         <div class="goods-sub">
                           <span><i></i>加入对比</span>
                         </div>
